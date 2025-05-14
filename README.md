@@ -7,7 +7,7 @@
 ## Features
 
 * **Image Loading & Downscaling**
-  Loads a sequence of five images (`frame1.jpg`–`frame5.jpg`), scales them to a fixed panel size for consistent sampling.
+  Loads a sequence of X images (`frame1.jpg`–`frameX.jpg`), scales them to a fixed panel size for consistent sampling.
 * **Point Sampling & Equalization**
   Extracts points based on a brightness threshold, uses adaptive spacing per image, shuffles and truncates lists to ensure equal dot counts across formations.
 * **Dot Animation**
@@ -19,12 +19,12 @@
 * **Playback Control**
   A **Play** button advances to the next formation, cycling through all loaded images.
 * **Customizable Parameters**
-  Configure FPS, transition duration, spacing, brightness threshold, and dot radius via constants in `DronePanel.java`.
+  Configure FPS, transition duration, spacing, brightness threshold, image_count, specific spacing constants, and dot radius via constants in `DronePanel.java`.
 
 ## Prerequisites
 
 * **Java SE 8 or later** (Swing library included)
-* **Image Files** Place `frame1.jpg` through `frame5.jpg` in an `images/` directory at the project root.
+* **Image Files** Place `frame1.jpg` through `frameX.jpg` in an `images/` directory at the project root.
 
 ## Installation & Running
 
@@ -56,6 +56,7 @@ DroneShowPrototype/         # Project root
 * **Input Images**: Replace or add image files in `images/` directory (ensure naming matches `frame%d.jpg`).
 * **Animation Settings**: Edit constants in `DronePanel.java`:
 
+  * `IMAGE_COUNT` for the number of images in 'images/'
   * `WIDTH`, `HEIGHT` for panel dimensions
   * `FPS`, `TRANSITION_SECONDS`, `MAX_DELAY` for timing
   * `DEFAULT_SPACING`, `SOCCER_SPACING` to adjust point density
@@ -72,7 +73,8 @@ DroneShowPrototype/         # Project root
 ## Future Enhancements
 
 * Add keyboard shortcuts or GUI controls for play/pause and speed adjustment.
-* Support dynamic loading of arbitrary numbers of frames.
+* Update image logic to include images with different contrast, brightness, etc.
+* Support dynamic loading of an arbitrary number of frames.
 * Export particle states to video or image sequences.
 * Integrate real drone hardware control via networking APIs.
 
