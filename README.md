@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Drone Show Prototype** is a Java Swing application that simulates drone light formations by animating a swarm of dots transitioning between shapes derived from image masks. It samples dark pixels from a series of images, creates `Dot` objects, and smoothly animates their positions and colors to mimic choreographed aerial displays.
+**Drone-Show-Prototype** is a Java Swing application that simulates drone light formations by animating a swarm of dots transitioning between shapes derived from image masks. It samples dark pixels from a series of images, creates `Dot` objects, and smoothly animates their positions and colors to mimic choreographed aerial displays.
 
 ## Features
 
