@@ -56,7 +56,7 @@ DroneShowPrototype/         # Project root
 * **Input Images**: Replace or add image files in `images/` directory (ensure naming matches `frame%d.jpg`).
 * **Animation Settings**: Edit constants in `DronePanel.java`:
 
-  * `IMAGE_COUNT` for the number of images in 'images/'
+  * `IMAGE_COUNT` for the number of images in `images/`
   * `WIDTH`, `HEIGHT` for panel dimensions
   * `FPS`, `TRANSITION_SECONDS`, `MAX_DELAY` for timing
   * `DEFAULT_SPACING`, `SOCCER_SPACING` to adjust point density
@@ -66,7 +66,7 @@ DroneShowPrototype/         # Project root
 
 ## Troubleshooting
 
-* **Missing Images**: Ensure all five `frameX.jpg` files exist in `images/`. Check console errors for missing file paths.
+* **Missing Images**: Ensure all `frameX.jpg` files exist in `images/`. Check console errors for missing file paths.
 * **Slow Performance**: Reduce `FPS`, increase `spacing`, or lower `IMAGE_COUNT`.
 * **Rendering Artifacts**: Verify that images match the panel’s dimensions or correct aspect ratio when sampling.
 
