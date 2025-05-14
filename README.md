@@ -47,7 +47,7 @@ DroneShowPrototype/         # Project root
 ├── Dot.java                # Represents a single animated dot
 ├── DronePanel.java         # Core animation panel (sampling & rendering)
 ├── DroneShowSetup.java     # Application entry point (JFrame and Play button)
-├── images/                 # Input image masks (frame1.jpg … frame5.jpg)
+├── images/                 # Input image masks (frame1.jpg … frameX.jpg)
 └── README.md               # Project documentation
 ```
 
