@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class DronePanel extends JPanel implements ActionListener {
     private static final int WIDTH = 800;
     private static final int HEIGHT = 600;
-    private static final int IMAGE_COUNT = 5;
+    private static final int IMAGE_COUNT = 1; // <- *SET TO DESIRED NUMBER OF IMAGES*
     private static final int DEFAULT_SPACING = 6;
     private static final int SOCCER_SPACING  = 1; 
     private static final int DOT_RADIUS = 3;
